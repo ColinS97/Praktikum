@@ -35,6 +35,7 @@ element = cv.getStructuringElement(
     (2 * erosion_size + 1, 2 * erosion_size + 1),
     (erosion_size, erosion_size),
 )
+
 sure_fg = cv.erode(opening, element)
 cv.imshow("sure_fg", sure_fg)
 cv.waitKey(0)
